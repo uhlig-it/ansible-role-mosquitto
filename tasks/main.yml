@@ -1,0 +1,29 @@
+---
+
+- name: mosquitto package
+  apt:
+    name: mosquitto
+    state: present
+  become: true
+
+- name: mosquitto service
+  service:
+    name: mosquitto
+    enabled: true
+  become: true
+
+- name: mosquitto client package
+  apt:
+    name: mosquitto-clients
+    state: present
+  become: true
+
+- name: mosquitto config
+  template:
+    src: templates/mosquitto.conf
+    dest: /etc/mosquitto/mosquitto.conf
+    owner: pi
+    group: pi
+  become: true
+  notify:
+    - restart mosquitto
