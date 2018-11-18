@@ -1,5 +1,5 @@
 galaxy_info:
-  role_name: ha-mosquitto
+  role_name: ha_mosquitto
   author: Mat Pataki
   description: 'mosquitto setup for home assistant'
   company: 'n/a'
@@ -14,4 +14,4 @@ galaxy_info:
   galaxy_tags:
     - homeassistant
 dependencies:
-  - mpataki.ha-letsencrypt
+  - mpataki.ha_letsencrypt
