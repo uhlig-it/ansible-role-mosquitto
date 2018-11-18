@@ -1,4 +1,5 @@
 galaxy_info:
+  role_name: ha-mosquitto
   author: Mat Pataki
   description: 'mosquitto setup for home assistant'
   company: 'n/a'
