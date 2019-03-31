@@ -2,4 +2,4 @@
 - hosts: localhost
   remote_user: root
   roles:
-    - ha-mosquitto
+    - ansible-ha-mosquitto
