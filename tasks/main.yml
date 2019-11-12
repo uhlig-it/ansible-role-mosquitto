@@ -18,7 +18,18 @@
     state: present
   become: true
 
-- name: mosquitto config
+- name: Password file exists
+  file:
+    path: /etc/mosquitto/passwd
+    state: touch
+
+- name: Password file is up to date
+  command: "mosquitto_passwd -b /etc/mosquitto/passwd {{ mosquitto_user | quote }} {{ mosquitto_password | quote }}"
+  become: true
+  notify:
+    - restart mosquitto
+
+- name: Config is up to date
   template:
     src: templates/mosquitto.conf
     dest: /etc/mosquitto/mosquitto.conf
