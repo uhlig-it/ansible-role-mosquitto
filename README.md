@@ -4,6 +4,11 @@
 
 > This is a customized fork of [mpataki/ansible-ha-mosquitto](https://github.com/mpataki/ansible-ha-mosquitto)
 
+# TODO
+
+- Let's Encrypt does not work on first run; it returns non-zero
+- restart of mosquitto is not reliable
+- letsencrypt needs to work with staging env
 
 This ansible role installs and configures a [Mosquitto MQTT broker](https://mosquitto.org/). It exposes a server on port 8883 with TLS encryption which can be exposed to the internet, and another on 1883 without encryption intended for use only within your home's network.
 
