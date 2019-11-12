@@ -1,10 +1,9 @@
 galaxy_info:
-  role_name: ha_mosquitto
-  author: Mat Pataki
-  description: 'mosquitto setup for home assistant'
-  company: 'n/a'
+  role_name: ansible-role-mosquitto
+  author: Mat Pataki, Steffen Uhlig
+  description: 'Mosquitto server with LetsEncrypt'
   license: MIT
-  min_ansible_version: 2.4
+  min_ansible_version: 2.6
 
   platforms:
     - name: Debian
@@ -12,6 +11,7 @@ galaxy_info:
         - stretch
 
   galaxy_tags:
-    - homeassistant
+    - mosquitto
+
 dependencies:
   - mpataki.ha_letsencrypt

@@ -1,6 +1,9 @@
-# ansible-ha-mosquitto
+# ansible-role-mosquitto
 
-[![Build Status](https://travis-ci.org/mpataki/ansible-ha-mosquitto.svg?branch=master)](https://travis-ci.org/mpataki/ansible-ha-mosquitto)
+[![Build Status](https://travis-ci.org/uhlig-it/ansible-role-mosquitto.svg?branch=master)](https://travis-ci.org/uhlig-it/ansible-role-mosquitto)
+
+> This is a customized fork of [mpataki/ansible-ha-mosquitto](https://github.com/mpataki/ansible-ha-mosquitto)
+
 
 This ansible role installs and configures a [Mosquitto MQTT broker](https://mosquitto.org/). It exposes a server on port 8883 with TLS encryption which can be exposed to the internet, and another on 1883 without encryption intended for use only within your home's network.
 
