@@ -1,18 +1,17 @@
 ---
-
-- name: mosquitto package
+- name: Server package is present
   apt:
     name: mosquitto
     state: present
   become: true
 
-- name: mosquitto service
+- name: Service exists
   service:
     name: mosquitto
     enabled: true
   become: true
 
-- name: mosquitto client package
+- name: Client package is present
   apt:
     name: mosquitto-clients
     state: present
