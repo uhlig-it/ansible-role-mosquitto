@@ -22,8 +22,6 @@
   template:
     src: templates/mosquitto.conf
     dest: /etc/mosquitto/mosquitto.conf
-    owner: pi
-    group: pi
   become: true
   notify:
     - restart mosquitto
