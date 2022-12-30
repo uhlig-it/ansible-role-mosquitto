@@ -14,4 +14,4 @@ galaxy_info:
     - mosquitto
 
 dependencies:
-  - mpataki.ha_letsencrypt
+  - { role: 'mpataki.ha_letsencrypt', when: certbot_hostnames is defined }
