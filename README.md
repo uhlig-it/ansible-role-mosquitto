@@ -4,17 +4,7 @@
 
 > This is a customized fork of [mpataki/ansible-ha-mosquitto](https://github.com/mpataki/ansible-ha-mosquitto)
 
-# TODO
-
-=> The whole letsencrypt setup seems a bit dated. It does not seem to make use of the [renew hook](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-the-mosquitto-mqtt-messaging-broker-on-ubuntu-18-04-quickstart). Perhaps there is a better role?
-
-- Let's Encrypt does not work on first run; it returns non-zero
-- restart of mosquitto is not reliable
-- letsencrypt needs to work with staging env
-
 This ansible role installs and configures a [Mosquitto MQTT broker](https://mosquitto.org/). It exposes a server on port 8883 with TLS encryption which can be exposed to the internet, and another on 1883 without encryption intended for use only within your home's network.
-
-What this role doesn't (currently) do is setup MQTT level user credentials.
 
 ## Requirements
 

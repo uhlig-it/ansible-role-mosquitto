@@ -4,14 +4,9 @@ galaxy_info:
   description: 'Mosquitto server with LetsEncrypt'
   license: MIT
   min_ansible_version: 2.6
-
   platforms:
     - name: Debian
       versions:
         - stretch
-
   galaxy_tags:
     - mosquitto
-
-dependencies:
-  - { role: 'mpataki.ha_letsencrypt', when: certbot_hostnames is defined }
